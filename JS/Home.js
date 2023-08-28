@@ -2,5 +2,5 @@
 
 function Start()
 {
-    window.location.href="/HTML/Home.html";
+    window.location.href="/HTML/Spel.html";
 }

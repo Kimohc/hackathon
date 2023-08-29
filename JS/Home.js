@@ -4,22 +4,22 @@ function Start()
 
     if(Values == "Sport")
     {
-        window.location.href = '/HTML/SpelSport.html';
+        window.location.href = '../HTML/SpelSport.html';
     }
 
     if(Values == "Film en Televisie")
     {
-        window.location.href = '/HTML/SpelFilm.html';
+        window.location.href = '../HTML/SpelFilm.html';
     }
 
     if(Values == "Muziek")
     {
-        window.location.href = '/HTML/SpelMuziek.html';
+        window.location.href = '../HTML/SpelMuziek.html';
     }
 
     if(Values == "Algemene Kennis")
     {
-        window.location.href = '/HTML/SpelAlgemeen.html';
+        window.location.href = '../HTML/SpelAlgemeen.html';
     }
  
 }

@@ -23,6 +23,11 @@
 
     </div>
 
+    <script src="../JS/confetti.js"></script>
+    <!-- Confetti  JS-->
+    <script>
+        confetti.start()
+    </script>
 
 </body>
 </html>

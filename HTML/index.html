@@ -5,26 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quizitto</title>
-    <link rel="stylesheet" href="/CSS/Home.css">
-    <script src="/JS/Home.js"></script>
-    <script src="https://kit.fontawesome.com/a4d79bb58d.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/Home.css">
+    <link rel="icon" type="image/x-icon" href="../IMG/quizpic.ico">
+    <script src="../JS/Home.js"></script>
 </head>
 
 <body>
     <div class="container">
-      <div id="home" class="flex-column flex-center">
-        <h1>Quizito</h1>
-        <a href="/HTML/Spel.html" class="btn">Play!</a>
-        <a href="/HTML/Highscores.html" class="btn" id="highscore-btn">
-            Highscores! 
-            <i class="fa-solid fa-crown"></i>
-        </a>
-      </div>
+        <h1>Quiz</h1>
+        <select name="Category1" id="Category" onchange="update()">
+            <option value="Politiek">Politiek</option>
+            <option value="Sport">Sport</option>
+            <option value="Custom">Custom</option>
+            <option value="Custom-veranderen">Custom Veranderen</option>
+        </select>
+        <button class="btn" id="startButton" onclick="Start()">Start Quiz!</button>
+
     </div>
 
+    <script src="../JS/confetti.js"></script>
+    <!-- Confetti  JS-->
+    <script>
+        confetti.start()
+    </script>
 
 </body>
 </html>

@@ -4,19 +4,19 @@ function Start() {
 
     if(e == "Politiek")
     {
-    window.location.href = "/HTML/SpelPolitiek.html";
+    window.location.href = "../HTML/SpelPolitiek.html";
     }
     if(e == "Sport")
     {
-        window.location.href = "/HTML/SpelSport.html"; 
+        window.location.href = "../HTML/SpelSport.html"; 
     }
     if(e == "Custom")
     {
-        window.location.href = "/HTML/SpelOverig.html"; 
+        window.location.href = "../HTML/SpelOverig.html"; 
     }
     if(e == "Custom-veranderen")
     {
-        window.location.href = "/HTML/Custom-Veranderen.html"; 
+        window.location.href = "../HTML/Custom-Veranderen.html"; 
     }
 }
 

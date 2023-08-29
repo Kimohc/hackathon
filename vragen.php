@@ -7,14 +7,16 @@
     <link rel="stylesheet" href="CSS/overig.css">
 </head>
 <body>
-    <div class="quiz-container">
-        <h1>Quiz: How well do you know about something?</h1>
-        <form action="quiz_result.php" method="post">
-        <p>Question 1: What is the capital of France?</p>
-            <label><input type="radio" name="q1" value="a"> a) Paris</label>
-            <label><input type="radio" name="q1" value="b"> b) London</label>
-            <label><input type="radio" name="q1" value="c"> c) Berlin</label>
-            <label><input type="radio" name="q1" value="d"> d) Rome</label>
+   <div class="quiz-container">
+    <h1>Quiz: How well do you know about something?</h1>
+    <form action="quiz_result.php" method="post">
+        <p>Question <?php echo $vraag_id; ?>: <?php echo $vraag_tekst; ?></p>
+        <label><input type="radio" name="q1" value="a"> a) Option A</label>
+        <label><input type="radio" name="q1" value="b"> b) Option B</label>
+        <label><input type="radio" name="q1" value="c"> c) Option C</label>
+        <label><input type="radio" name="q1" value="d"> d) Option D</label>
+    </form>
+
 
             <br>
 

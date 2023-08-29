@@ -12,9 +12,13 @@ function Start() {
     {
         window.location.href = "/HTML/SpelSport.html"; 
     }
-    if(e == "Overig")
+    if(e == "Custom")
     {
         window.location.href = "/HTML/SpelOverig.html"; 
+    }
+    if(e == "Custom-veranderen")
+    {
+        window.location.href = "/HTML/Custom-Veranderen.html"; 
     }
 }
 

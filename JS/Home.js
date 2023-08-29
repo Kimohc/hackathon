@@ -1,35 +1,25 @@
-function Start() {
-    var e = document.getElementById("Category").value;
-    alert(e);
+function Start()
+{
+    const Values = document.getElementById('Category').value
 
-    if(e == "Politiek")
+    if(Values == "Sport")
     {
-    window.location.href = "../HTML/SpelPolitiek.php";
+        window.location.href = '/HTML/SpelSport.html';
     }
-    if(e == "Sport")
+
+    if(Values == "Film en Televisie")
     {
-        window.location.href = "../HTML/SpelSport.php"; 
+        window.location.href = '/HTML/SpelFilm.html';
     }
-    if(e == "Custom")
+
+    if(Values == "Muziek")
     {
-        window.location.href = "../HTML/SpelOverig.php"; 
+        window.location.href = '/HTML/SpelMuziek.html';
     }
-    if(e == "Custom-veranderen")
+
+    if(Values == "Algemene Kennis")
     {
-        window.location.href = "../HTML/Custom-Veranderen.php"; 
+        window.location.href = '/HTML/SpelAlgemeen.html';
     }
+ 
 }
-
-function update() {
-    var select = document.getElementById('Category');
-    var option = select.options[select.selectedIndex];
-
-    if(option.value == "Custom-veranderen"){
-        document.getElementById('startButton').innerText = 'Verander Quiz!';
-    }
-    else{
-        document.getElementById('startButton').innerText = 'Start Quiz!';
-    }
-}
-
-update();

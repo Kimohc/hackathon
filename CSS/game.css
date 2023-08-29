@@ -1,0 +1,65 @@
+.choice-container {
+  display: flex;
+  width: 100%;
+  border-radius: 4px;
+  background-color: #c08261;
+  font-size: 2rem;
+  min-width: 80rem;
+  margin-top: 5px;
+}
+.choice-container:hover {
+  cursor: pointer;
+  background-color: #e2c799;
+  transform: scale(1.02);
+  transition: transform 100ms;
+}
+.choice-prefix {
+  padding: 2rem 2rem;
+  color: white;
+}
+.choice-text {
+  padding: 2rem;
+  width: 100%;
+}
+.correct {
+  background: lightgreen !important;
+}
+.incorrect {
+  background: red !important;
+}
+#hud {
+  display: flex;
+  justify-content: space-between;
+}
+.hud-prefix {
+  text-align: center;
+  font-size: 2.5rem;
+}
+.hud-main-text {
+  text-align: center;
+}
+.hud-item1 {
+  position: relative;
+  left: 300%;
+  bottom: 50%;
+}
+
+
+#progressBar {
+  width: 20rem;
+  height: 3rem;
+  border: 0.2rem solid #9a3b3b;
+  border-radius: 50px;
+  overflow: hidden;
+}
+#progressBarFull {
+  height: 100%;
+  background: #9a3b3b;
+  width: 0%;
+}
+
+@media screen and (max-width: 768px) {
+  .choice-container {
+    min-width: 40rem;
+  }
+}

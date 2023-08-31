@@ -5,6 +5,7 @@
   background-color: #c08261;
   font-size: 2rem;
   min-width: 80rem;
+  max-width: 80rem;
   margin-top: 5px;
 }
 .choice-container:hover {
@@ -14,11 +15,11 @@
   transition: transform 100ms;
 }
 .choice-prefix {
-  padding: 2rem 2rem;
+  padding: 1rem;
   color: white;
 }
 .choice-text {
-  padding: 2rem;
+  padding: 1rem;
   width: 100%;
 }
 .correct {
@@ -60,6 +61,15 @@
 
 @media screen and (max-width: 768px) {
   .choice-container {
-    min-width: 40rem;
+    flex-direction: row;
+    min-width: 20%;
   }
+  
+}
+@media screen and (max-width: 1108px) {
+  .choice-container {
+    flex-direction: row;
+    min-width: 40%;
+  }
+  
 }
